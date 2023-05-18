@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
 <body>
     <main>
         <section id="Login">
-            <div id="iagem">
-                Foto
-
+            <div id="imagem">
+            
             </div>
             <div id="Formulario">
                 <h1>Login</h1>
                 <P>Seja bem-vindo(a) novamente. Faça Login para acessar sua conta.</P>
                 
-                <form action="login.php" method="post">
-                    
+                <form action="login.php" method="post" auto>
+                    <label for="iuser">Usuario:</label>
+                   <input type="text" id="iuser" autocomplete="username" > 
+                   <label for="isenha">Senha:</label>
+                   <input type="password" id="isenha" autocomplete="current-password" >
                 </form>
             </div>  
         </section>
